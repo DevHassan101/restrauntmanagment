@@ -258,13 +258,7 @@
         <nav class="navbar navbar-expand-sm navbar-light bg-nz">
             <div class="container">
                 <a class="navbar-brand" href="#" id="heading">Restraunt - POS {{ session('tableid') }}</a>
-                <?php $data = DB::table('tables')
-                    ->join('floors', 'floors.id', '=', 'tables.floor_id')
-                    ->join('assign_table_to_staff', 'assign_table_to_staff.table_id', '=', 'tables.id')
-                    ->join('staff', 'staff.id', '=', 'assign_table_to_staff.staff_id')
-                    ->select('tables.*', 'staff.name as waiter', 'floors.name as floor')
-                    ->where('tables.id', '=', $id)
-                    ->first(); ?>
+                
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">

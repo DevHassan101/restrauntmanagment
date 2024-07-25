@@ -13,7 +13,8 @@ class TableController extends Controller
      */
     public function index()
     {
-        $tables = Table::join('floors','floors.id','=','tables.floor_id')->select('tables.*','floors.name as floor')->get();
+        $tables = Table::join('floors','floors.id','=','tables.floor_id')
+        ->select('tables.*','floors.name as floor')->get();
         return view('admin.pages.tables', compact('tables'));
     }
 

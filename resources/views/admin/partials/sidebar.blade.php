@@ -11,8 +11,8 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('cashier') }}">
-                 <i class="bi bi-journal-text"></i><span>Cashier</span></i>
+             <a class="nav-link collapsed" href="{{ url('category') }}">
+                 <i class="bi bi-journal-text"></i><span>Category</span></i>
              </a>
          </li>
 
@@ -22,6 +22,8 @@
              </a>
          </li>
 
+
+
          <li class="nav-item">
              <a class="nav-link collapsed" href="{{ url('deal') }}">
                  <i class="bi bi-journal-text"></i><span>Deal</span></i>
@@ -29,32 +31,21 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('category') }}">
-                 <i class="bi bi-journal-text"></i><span>Category</span></i>
-             </a>
-         </li>
-
-         <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('stafftable') }}">
-                 <i class="bi bi-journal-text"></i><span>Assign Table</span></i>
-             </a>
-         </li>
-
-         <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('table') }}">
-                 <i class="bi bi-journal-text"></i><span>Tables</span></i>
-             </a>
-         </li>
-
-         <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('staff') }}">
-                 <i class="bi bi-journal-text"></i><span>Staff</span></i>
+             <a class="nav-link collapsed" href="{{ url('discount') }}">
+                 <i class="bi bi-journal-text"></i><span>Discount</span></i>
              </a>
          </li>
 
          <li class="nav-item">
              <a class="nav-link collapsed" href="{{ url('staffrole') }}">
                  <i class="bi bi-journal-text"></i><span>Staff Role</span></i>
+             </a>
+         </li>
+
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" href="{{ url('staff') }}">
+                 <i class="bi bi-journal-text"></i><span>Staff</span></i>
              </a>
          </li>
 
@@ -65,18 +56,30 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('discount') }}">
-                 <i class="bi bi-journal-text"></i><span>Discount</span></i>
+             <a class="nav-link collapsed" href="{{ url('table') }}">
+                 <i class="bi bi-journal-text"></i><span>Tables</span></i>
              </a>
          </li>
 
 
          <li class="nav-item">
-             <a class="nav-link collapsed" href="{{ url('tax') }}">
-                 <i class="bi bi-journal-text"></i><span>Tax</span></i>
+             <a class="nav-link collapsed" href="{{ url('stafftable') }}">
+                 <i class="bi bi-journal-text"></i><span>Assign Table</span></i>
              </a>
          </li>
 
+
+         <li class="nav-item">
+            <a class="nav-link collapsed" href="{{ url('tax') }}">
+                <i class="bi bi-journal-text"></i><span>Tax</span></i>
+            </a>
+        </li>
+
+         <li class="nav-item">
+             <a class="nav-link collapsed" href="{{ url('cashier') }}">
+                 <i class="bi bi-journal-text"></i><span>Cashier</span></i>
+             </a>
+         </li>
 
          <li class="nav-item">
              <a class="nav-link collapsed" href="{{ url('reports') }}">

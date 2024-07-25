@@ -27,6 +27,7 @@ use Illuminate\Support\Facades\Session;
 
 use Mike42\Escpos\PrintConnectors\FilePrintConnector;
 use charlieuki\ReceiptPrinter\ReceiptPrinter as ReceiptPrinter;
+use Illuminate\Support\Facades\DB;
 
 class PosController extends Controller
 {
@@ -38,8 +39,8 @@ class PosController extends Controller
     public function SelectTable()
     {
         $tables = Table::join('floors', 'floors.id', '=', 'tables.floor_id')
-            ->leftJoin('assign_table_to_staff', 'assign_table_to_staff.table_id', '=', 'tables.id')
-            ->leftjoin('staff', 'staff.id', '=', 'assign_table_to_staff.staff_id')
+            ->join('assign_table_to_staff', 'assign_table_to_staff.table_id', '=', 'tables.id')
+            ->join('staff', 'staff.id', '=', 'assign_table_to_staff.staff_id')
             ->select('tables.*', 'staff.name as waiter', 'floors.name as floor')
             ->get();
         return view('admin.pages.selecttable', compact('tables'));
@@ -66,7 +67,14 @@ class PosController extends Controller
         $tax = Tax::where('status', '=', true)->first();
         $deals = Deal::get();
         $products = Product::get();
-        return view('admin.pages.pos', compact('categories', 'items', 'tables', 'id', 'discounts', 'tax', 'deals', 'products'));
+        $data = DB::table('tables')
+            ->join('floors', 'floors.id', '=', 'tables.floor_id')
+            ->join('assign_table_to_staff', 'assign_table_to_staff.table_id', '=', 'tables.id')
+            ->join('staff', 'staff.id', '=', 'assign_table_to_staff.staff_id')
+            ->select('tables.*', 'staff.name as waiter', 'floors.name as floor')
+            ->where('tables.id', '=', $id)
+            ->first();
+        return view('admin.pages.pos', compact('categories', 'items', 'tables', 'id', 'discounts', 'tax', 'deals', 'products','data'));
     }
 
     public function fetchProducts(Request $request)

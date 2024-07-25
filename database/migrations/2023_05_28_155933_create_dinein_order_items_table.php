@@ -15,9 +15,11 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('order_id');
             $table->foreign('order_id')->on('dinein_orders')->references('id')->onUpdate('cascade')->onDelete('cascade');
-            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('product_id')->nullable();
             $table->foreign('product_id')->on('products')->references('id')->onUpdate('cascade')->onDelete('cascade');
-            $table->decimal('quantity');
+            $table->unsignedBigInteger('deal_id')->nullable();
+            $table->foreign('deal_id')->on('deals')->references('id')->onUpdate('cascade')->onDelete('cascade');
+           $table->decimal('quantity');
             $table->timestamps();
         });
     }

@@ -65,6 +65,9 @@ class PosController extends Controller
         $categories = Category::get();
         $discounts = Discount::get();
         $tax = Tax::where('status', '=', true)->first();
+        if (!$tax) {
+            return redirect('tax/create');
+        }
         $deals = Deal::get();
         $products = Product::get();
         $data = DB::table('tables')

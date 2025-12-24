@@ -422,7 +422,7 @@
                                 </div>
                                 <div class="col-md-6">
 
-                                    <h5>{{ $tax->name }}: <span class="tax">{{ $tax->percentage }} % (<span
+                                    <h5>{{ $tax?->name }}: <span class="tax">{{ $tax?->percentage }} % (<span
                                                 class="taxamountt"></span>)</span>
                                     </h5>
                                 </div>
@@ -461,7 +461,7 @@
                                     {{-- <small class="text-muted" id="discountamount"></small> --}}
                                 </div>
                                 <input type="hidden" class="form-control modal-input" name="tax" id="tax"
-                                    aria-describedby="helpId" value="{{ $tax->id }}"required>
+                                    aria-describedby="helpId" value="{{ $tax?->id }}"required>
                                 <div class="col-md-6">
                                     <label for="" class="form-label">Amount Recieve</label>
                                     <input type="number" class="form-control modal-input" name="recieve"

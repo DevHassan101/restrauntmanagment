@@ -42,7 +42,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Category Name</th>
-                        <th scope="col">category Image</th>
+                        <th scope="col">Category Image</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>

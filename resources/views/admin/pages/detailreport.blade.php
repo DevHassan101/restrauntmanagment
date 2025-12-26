@@ -19,18 +19,16 @@
                 </div>
             @endif
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-8 d-flex justify-content-start align-items-center">
                     <h3>
-                        Detail Reports
+                        Detail Reports: 
                     </h3>
-                </div>
-                <div class="col-md-4">
-                    <input type="date" class="form-control" id="dateInput" aria-describedby="helpId">
+                    <input type="date" class="form-control w-50 mx-2" id="dateInput" aria-describedby="helpId">
                 </div>
                 <div class="col-md-4 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-primary mx-2" id="showbutton">Show</button>
-                    <button type="button" class="btn btn-primary mx-2" id="printbutton">Print</button>
-                    <button type="button" class="btn btn-primary mx-2" id="exportbutton">Export</button>
+                    <button type="button" class="btn btn-primary mx-1" id="showbutton">Show</button>
+                    <button type="button" class="btn btn-primary mx-1" id="printbutton">Print</button>
+                    <button type="button" class="btn btn-primary mx-1" id="exportbutton">Export</button>
                 </div>
             </div>
         </div>

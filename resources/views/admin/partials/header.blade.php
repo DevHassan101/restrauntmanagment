@@ -34,8 +34,8 @@
 
     <div class="d-flex align-items-center justify-content-between">
         <a href="index.html" class="logo d-flex align-items-center">
-            {{-- <img src="assets/img/logo.png" alt=""> --}}
-            <span class="d-none d-lg-block">ByteCloud</span>
+            <iconify-icon icon="game-icons:dust-cloud" width="34" height="34"  style="color: #e4627aff"></iconify-icon>
+            <span class="d-none d-lg-block mx-1" style="font-family: Outfit, sans-serif">ByteCloud</span>
         </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -47,14 +47,13 @@
     </form>
   </div><!-- End Search Bar --> --}}
 
-    <nav class="header-nav m-auto">
+    <nav class="header-nav ms-auto">
         <ul class="d-flex align-items-center">
-
-            <li class="nav-item mx-3">
-                <h2 id="date" style="color: #8f5300"></h2>
+            <li class="nav-item mx-1">
+                <h2 id="date" class="m-0 p-0" style="color: #ef90a2; font-size: 25px;"></h2>
             </li>
-            <li class="nav-item mx-3">
-                <h2 id="time" style="color: #8f5300"></h2>
+            <li class="nav-item mx-1">
+                <h2 id="time" class="m-0 p-0" style="color: #ef90a2; font-size: 25px;"></h2>
             </li>
             <li class="nav-item dropdown pe-3">
 

@@ -19,21 +19,23 @@
                 </div>
             @endif
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 ">
                     <h3>
                         Summary Reports
                     </h3>
                 </div>
-                <div class="col-md-6 d-flex">
-                    <label for="">Start Date</label>
+                <div class="col-md-3 d-flex justify-content-center align-items-center m-0 p-0">
+                    <label for="" class="d-inline-block m-0 p-0">Start Date</label>
                     <input type="date" class="form-control mx-1 w-auto" id="dateInputStart" aria-describedby="helpId">
-                    <label for="">End Date</label>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center align-items-center m-0 p-0">
+                    <label for="" class="d-inline-block m-0 p-0 ">End Date</label>
                     <input type="date" class="form-control mx-1 w-auto" id="dateInputEnd" aria-describedby="helpId">
                 </div>
                 <div class="col-md-3 d-md-flex justify-content-md-end">
-                    <button type="button" class="btn btn-primary mx-2" id="showbutton">Show</button>
-                    <button type="button" class="btn btn-primary mx-2" id="printbutton">Print</button>
-                    <button type="button" class="btn btn-primary mx-2" id="exportbutton">Export</button>
+                    <button type="button" class="btn btn-primary mx-1" id="showbutton">Show</button>
+                    <button type="button" class="btn btn-primary mx-1" id="printbutton">Print</button>
+                    <button type="button" class="btn btn-primary mx-1" id="exportbutton">Export</button>
                 </div>
             </div>
         </div>

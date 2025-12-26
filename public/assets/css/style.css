@@ -9,19 +9,21 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 :root {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Outfit", sans-serif !important;
     background: white;
     color: #ffffff;
 }
-.btn-primary-nz{
+.btn-primary-nz {
     background-color: #8f5300;
 }
-.btn-primary-nz:hover{
+.btn-primary-nz:hover {
     background-color: #8f5300;
 }
 a {
@@ -40,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Nunito", sans-serif;
+    font-family: "Outfit", sans-serif !important;
 }
 
 /*--------------------------------------------------------------
@@ -75,10 +77,11 @@ h6 {
 }
 
 .pagetitle h1 {
-    font-size: 24px;
-    margin-bottom: 0;
-    font-weight: 600;
-    color: #8f5300;
+    font-size: 27px;
+    font-weight: 500;
+    font-family: "Outfit", sans-serif !important;
+    margin-bottom: 2px !important;
+    color: #ef90a2;
 }
 
 /*--------------------------------------------------------------
@@ -91,10 +94,10 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 99999;
-    background: #8f5300;
+    background: #ef90a2;
     width: 40px;
     height: 40px;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: all 0.4s;
 }
 
@@ -105,7 +108,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #c2ad80;
+    background: #d16579;
 }
 
 .back-to-top.active {
@@ -232,18 +235,18 @@ h6 {
 /* Card */
 .card {
     margin-bottom: 30px;
-    border: 1px solid #8f5300;
-    border-radius: 5px;
+    border: 1px solid #ef90a2;
+    border-radius: 8px;
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
     background: transparent;
-    color: #8f5300;
+    color: rgba(0, 0, 0, 0.76);
 }
 
 .card-header,
 .card-footer {
-    border-color: #8f530066;
+    border-color: #ef90a19a;
     background-color: transparent;
-    color: #8f5300;
+    color: #e7617a;
     padding: 15px;
 }
 
@@ -251,15 +254,16 @@ h6 {
     padding: 20px 0 15px 0;
     font-size: 18px;
     font-weight: 500;
-    color: #8f5300;
-    font-family: "Poppins", sans-serif;
-    border-bottom: 1px solid #8f5300;
+    color: #ef90a2;
+    font-family: "Outfit", sans-serif !important;
+    border-bottom: 1px solid #ef90a2;
 }
 
 .card-title span {
-    color: #899bbd;
+    color: rgba(0, 0, 0, 0.76);
     font-size: 14px;
     font-weight: 400;
+    padding-left: 7px;
 }
 
 .card-body {
@@ -273,7 +277,7 @@ h6 {
 /* Alerts */
 .alert-heading {
     font-weight: 500;
-    font-family: "Poppins", sans-serif;
+    font-family: "Outfit", sans-serif !important;
     font-size: 20px;
 }
 
@@ -322,13 +326,13 @@ h6 {
 /* Breadcrumbs */
 .breadcrumb {
     font-size: 14px;
-    font-family: "Nunito", sans-serif;
+    font-family: "Outfit", sans-serif !important;
     color: #899bbd;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .breadcrumb a {
-    color: #899bbd;
+    color: #9dadca;
     transition: 0.3s;
 }
 
@@ -388,8 +392,8 @@ h6 {
 .logo span {
     font-size: 26px;
     font-weight: 700;
-    color: white;
-    font-family: "Nunito", sans-serif;
+    color: #ef90a2;
+    font-family: "Outfit", sans-serif !important;
 }
 
 .header {
@@ -397,9 +401,9 @@ h6 {
     z-index: 997;
     height: 60px;
     box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
-    background-color: #fa9302;
+    background-color: white;
     padding-left: 20px;
-    border-bottom: 3px solid #8f5300;
+    border-bottom: 1px solid #ef90a2;
     /* Toggle Sidebar Button */
     /* Search Bar */
 }
@@ -628,8 +632,8 @@ h6 {
     scrollbar-width: auto;
     scrollbar-color: white !important;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1) !important;
-    background-color: #fa9302;
-    border-right:3px solid #8f5300 
+    background-color: white;
+    border-right: 1px solid #ef90a2;
 }
 
 @media (max-width: 1199px) {
@@ -645,7 +649,7 @@ h6 {
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-    background-color: #8f5300;
+    background-color: #ef90a111;
 }
 
 @media (min-width: 1200px) {
@@ -682,7 +686,6 @@ h6 {
     padding: 0;
     margin: 0;
     list-style: none;
-    background-color: #2e0077;
 }
 
 .sidebar-nav .nav-item {
@@ -705,8 +708,8 @@ h6 {
     color: white;
     transition: 0.3;
     padding: 10px 15px;
-    border-radius: 4px;
-    background-color: #8f5300;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #e67b8e,#ef90a2);
 }
 
 .sidebar-nav .nav-link i {
@@ -724,11 +727,11 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-    color: #D8D8D8;
+    color: #d6d6d6;
 }
 
 .sidebar-nav .nav-link:hover i {
-    color: #D8D8D8;
+    color: #d8d8d8;
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -784,11 +787,11 @@ h6 {
 }
 
 .dashboard .filter .icon {
-    color: #aab7cf;
     padding-right: 20px;
     padding-bottom: 5px;
     transition: 0.3s;
-    font-size: 16px;
+    font-size: 20px;
+    color: #aeb9ce;
 }
 
 .dashboard .filter .icon:hover,
@@ -821,24 +824,25 @@ h6 {
 
 .dashboard .info-card h6 {
     font-size: 28px;
-    color: white;
+    color: #bd5266 !important;
     font-weight: 700;
     margin: 0;
     padding: 0;
 }
 
 .dashboard .card-icon {
-    font-size: 32px;
+    font-size: 24px;
     line-height: 0;
-    width: 64px;
-    height: 64px;
+    width: 57px;
+    height: 57px;
     flex-shrink: 0;
     flex-grow: 0;
 }
 
 .dashboard .sales-card .card-icon {
-    color: #8f5300;
-    background: #f6f6fe;
+    border: 1px solid #ef90a2;
+    background-image: linear-gradient(to top right, #fac5b5, #ef90a2);
+    color: white;
 }
 
 .dashboard .revenue-card .card-icon {
@@ -847,8 +851,9 @@ h6 {
 }
 
 .dashboard .customers-card .card-icon {
-    color: #ff771d;
-    background: #ffecdf;
+    border: 1px solid #ef90a2;
+    background-image: linear-gradient(to top left, #fac5b5, #ef90a2);
+    color: white;
 }
 
 /* Activity */
@@ -999,7 +1004,7 @@ h6 {
 }
 
 .iconslist .label {
-    font-family: var(--bs-font-monospace);
+    font-family: "Outfit", sans-serif !important;
     display: inline-block;
     width: 100%;
     overflow: hidden;
@@ -1233,68 +1238,72 @@ h6 {
     padding: 20px 0;
     font-size: 14px;
     transition: all 0.3s;
-    border-top: 1px solid #cddfff;
+    border-top: 1px solid #ef90a193;
 }
 
 .footer .copyright {
     text-align: center;
-    color: #8f5300;
+    color: #ef90a2;
 }
 
 .footer .credits {
     padding-top: 5px;
     text-align: center;
     font-size: 13px;
-    color: #8f5300;
+    color: #ef90a2;
 }
 
-
-.form-control{
-    background: transparent !important;
-    color: #8f5300;
-    border: 1px solid #8f5300;
-}
-.form-control:focus{
-    color: #8f5300;
-}
-.form-select{
-    background: transparent !important;
-    color: #8f5300;
-    border: 1px solid #8f5300;
-}
-.form-select::selection{
-    color: #8f5300;
+.footer .footer-link{
+    font-weight: 700;
+    color: #e46179;
 }
 
-.btn-primary{
+.form-control {
     background: transparent !important;
-    color: #8f5300 !important;
-    border: 1px solid #8f5300 !important;
+    color: black;
+    border: 1px solid #ef90a2;
 }
-.btn-primary:hover{
-    background: #8f5300 !important;
+.form-control:focus {
+    color: #e4667d;
+}
+.form-select {
+    background: transparent !important;
+    color: #e4667d;
+    border: 1px solid #ef90a2;
+}
+.form-select::selection {
+    color: #e4667d;
+}
+
+.btn-primary {
+    background: transparent !important;
+    color: #ef90a2 !important;
+    border: 1px solid #ef90a2 !important;
+}
+.btn-primary:hover {
+    background: #ef90a2 !important;
     color: white !important;
 }
-.btn-danger{
+.btn-danger {
     background: transparent !important;
-    color: #BB40E4;
-    border: 1px solid #BB40E4 !important;
+    color: #bb40e4;
+    border: 1px solid #bb40e4 !important;
 }
-.btn-danger:hover{
-    background: #BB40E4 !important;
+.btn-danger:hover {
+    background: #bb40e4 !important;
     color: black;
 }
-th{
-    color: #8f5300;
+th {
+    color: #ef90a2;
 }
-td{
-    color: #8f5300;
+td {
+    color: rgba(0, 0, 0, 0.800);
 }
 
-.table-hover tr:hover{
+.table-hover tr:hover {
     color: #8f5300;
     background-color: white;
 }
-.bg-light{
+.bg-light {
     background-color: transparent !important;
 }

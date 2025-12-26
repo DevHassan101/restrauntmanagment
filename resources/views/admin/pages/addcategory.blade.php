@@ -29,7 +29,7 @@
                     @enderror
                 </div>
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary px-5">Add</button>
                 </div>
             </form><!-- End Multi Columns Form -->
 

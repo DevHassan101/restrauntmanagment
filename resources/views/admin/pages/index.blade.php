@@ -14,7 +14,7 @@
         }
 
         thead {
-            background-color: #fa9302 !important;
+            background-color: #fac5b5 !important;
         }
     </style>
     <div class="row">

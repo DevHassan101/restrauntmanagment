@@ -1,20 +1,32 @@
 @foreach ($products as $product)
-    <div class="row prow">
-        <div class="col-md-2">
-            @if ($product->image)
-                <img class="card-img-top" src="{{ asset('productimage/' . $product->image) }}" alt="Title" height="50px"
-                    width="70px">
-            @else
-                <img class="card-img-top" src="{{ asset('assets/img/noimage.jpg') }}" alt="Title" height="50px"
-                    width="70px">
-            @endif
-        </div>
-        <div class="col-md-7">
-            <h5>{{ $product->name }}</h5>
-        </div>
-        <div class="col-md-3">
-            <button type="button" class="btn btn-outline-nz" onclick="addtocart(this, 0)"
-                value="{{ $product->id }}">Add Item</button>
+<div class="product-card">
+    {{-- Product Image --}}
+    <div class="product-image-container">
+        @if ($product->image)
+        <img
+            src="{{ asset('productimage/' . $product->image) }}"
+            alt="{{ $product->name }}"
+        />
+        @else
+        <img
+            src="{{ asset('assets/img/noimage.jpg') }}"
+            alt="{{ $product->name }}"
+        />
+        @endif
+    </div>
+    <div class="product-info">
+        <div class="product-name">{{ $product->name }}</div>
+        <div class="product-footer">
+            <div class="product-price">₨{{ $product->price ?? '0' }}</div>
+            <button
+                class="add-btn"
+                onclick="addtocart(this, 0)"
+                value="{{ $product->id }}"
+            >
+                 <iconify-icon icon="mdi:plus" width="15"></iconify-icon>
+                 Add item
+            </button>
         </div>
     </div>
+</div>
 @endforeach

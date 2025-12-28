@@ -136,7 +136,7 @@
 
 <body>
     <div class="container-fluid receipt">
-        <h4 style="text-align:center">NZ - Restruant</h4>
+        <h4 style="text-align:center">ByteCloud - Restaurant</h4>
         <h6 class="heading">Order Receipt</h6>
         <div class="slips">
 
@@ -218,7 +218,7 @@
 
 
         <div class="para">
-            <p>وفر _آ كثر _ معنا<br>Thank You<br> Visit us again <br><small>Powered By: NZ
+            <p>وفر _آ كثر _ معنا<br>Thank You<br> Visit us again <br><small>Powered By: ByteCloud
                     Developers</small><br>Contact: 054 611 4576</p>
         </div>
         <h1 style="text-align: center"><?php //echo $a;

@@ -21,10 +21,10 @@ body {
     color: #ffffff;
 }
 .btn-primary-nz {
-    background-color: #8f5300;
+    background-image: linear-gradient(to bottom, #e67b8e,#ef90a2);
 }
 .btn-primary-nz:hover {
-    background-color: #8f5300;
+    background-color: #dd647a ;
 }
 a {
     color: #8f5300;
